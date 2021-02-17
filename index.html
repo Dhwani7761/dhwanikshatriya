@@ -8,34 +8,103 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="img float-container">
-        <div class="float-child">
-            <span class="cd-intro">
-                <h1 class="cd-headline clip is-full-width">
-                    <span style="margin-top: 8%;">
-                        <span style=" font-family: 'Handlee', cursive;font-weight: 800;font-size: 80px;">Dhwani
-                            Kshatriya</span>
-                        <br>
-                        <span style="color: rgb(61, 61, 61);">I am </span>
-                        <span class="cd-words-wrapper" style="color: rgb(61, 61, 61);">
-                            <b class="is-visible">Web Engineer</b>
-                            <b>MEAN Dev</b>
-                            <b>a Dancer</b>
-                            <b>a Proud Indian</b>
+    <div class="topnav " id="myTopnav">
+        <a href="#me">About</a>
+        <a href="#news">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div>
+            <div class="float-child">
+                <span class="cd-intro">
+                    <h1 class="cd-headline clip is-full-width">
+                        <span style="margin-top: 8%;">
+                            <span style=" font-family: 'Handlee', cursive;font-weight: 800;font-size: 80px;">Dhwani
+                                Kshatriya</span>
+                            <br>
+                            <span style="color: rgb(61, 61, 61);">I am </span>
+                            <span class="cd-words-wrapper" style="color: rgb(61, 61, 61);">
+                                <b class="is-visible">Web Engineer</b>
+                                <b>MEAN Dev</b>
+                                <b>a Dancer</b>
+                                <b>a Proud Indian</b>
+                            </span>
                         </span>
-                    </span>
-                </h1>
-            </span>
-        </div>
-        <div class="float-child">
-            <img src="robot-emotions.gif" class="gifwidth" height="400px">
+                    </h1>
+                </span>
+            </div>
+            <div class="float-child">
+                <img src="robot-emotions.gif" class="gifwidth" height="400px">
+            </div>
         </div>
     </div>
+    <section class="about float-container" id="me">
+        <div class="float-child">
+            <img class="logo" src="dhwani.jpg">
+            <div>
+                <ul class="tools float-child">
+                    <li><a href="https://github.com/Dhwani7761" target="_blank"><i class="fa fa-github"
+                                style="color: black;"></i></a></li>
+                    <li><a href="https://www.facebook.com/dhwani.kshatriya.9" target="_blank"><i
+                                class="fa fa-facebook-official" style="color: rgb(73, 73, 240);"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/dhwani-kshatriya-034b65146" target="_blank"><i
+                                class="fa fa-linkedin-square"></i></a></li>
+                    <li><a href="mailto:dhwanikshatriya77@gmail.com" target="_blank"><i class="fa fa-envelope-o"
+                                style="color: red;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="float-child" style="margin-top: 70px;">
+            <h1>About me.</h1>
+            <p>
+                Hi I am Dhwani Kshatriya, a 23 year old DOM Manipulation Engineer,a MEAN stack dev and a
+                passionate Dancer living in <a href="https://goo.gl/maps/Y2Bm1DxsZ4bM3fNo6" target="_blank">Gujarat
+                    India</a>. I am a Computer Science Engineer, currently working with
+                awesome
+                folks at <a href="http://www.infoobjects.com/" rel="nofollow" target="_blank">InfoObjects, India
+                    Development Center</a>.
+            </p>
+            <p>
+                Have a look at my <a href="#myskills">skills</a> or just connect with me on <a
+                    href="https://www.linkedin.com/in/dhwani-kshatriya-034b65146" target="_blank">LinkedIn</a>. I am
+                always excited to meet new like minded people and also like to explore
+                heritage sites of India.
+            </p>
+        </div>
+    </section>
+    <section class="float-container">
+        <div class="footer">
+            <div class="float-child3 footer1">
+            </div>
+            <div class="float-child3 footer1">
+                <p>
+                    <span style=" font-family: 'Handlee', cursive;font-weight: 800;font-size: 50px; color:black;">Dhwani Kshatriya</span>
+                </p>
+                <p>
+                    Made with <i class="fa fa-heart" style="color: red;"></i> in India
+                </p>
+            </div>
+            <div class="float-child3">
+            </div>
+        </div>
+    </section>
 </body>
+
 <script>
+
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
 
     jQuery(document).ready(function ($) {
         //set animation timing
