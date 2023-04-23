@@ -452,7 +452,7 @@ hr {
 }
 
 .bar h3 {
-	font-size: 2.0em;
+	font-size: 1.5em;
 	font-weight: normal;
 	margin: 0;
   font-family: 'Handlee';
@@ -473,7 +473,7 @@ h3 {
 }
 .bactive {
 	border-bottom:3px solid #BBD2EF;
-		font-weight:800;
+	font-weight:800;
 }
 .sbar {
   display:none;
