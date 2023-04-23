@@ -16,7 +16,7 @@
     <div class="topnav " id="myTopnav">
         <a href="#me">About</a>
         <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <!-- <a href="#contact">Contact</a> -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -63,8 +63,8 @@
         <div class="float-child" style="margin-top: 70px;">
             <h1>About me.</h1>
             <p>
-                Hi! I am Dhwani Kshatriya, a 25 year old Full stack developer having experience working in Python, Node, React and Angular and also a
-                passionate Dancer living in <a href="https://goo.gl/maps/Y2Bm1DxsZ4bM3fNo6" target="_blank">Gujarat
+                Hi! I am Dhwani Kshatriya, a 25 year old Full stack developer having experience working in Python, Node, React and Angular, also a
+                passionate Dancer living in <a href="https://goo.gl/maps/Y2Bm1DxsZ4bM3fNo6" target="_blank">Gujarat,
                     India</a>. A Computer Science Engineer, professionally graduated from <a
                     href="https://www.daiict.ac.in/" target="_blank">DAIICT,</a> and currently working with some
                 awesome folks at <a href="https://www.bcg.com/x" rel="nofollow" target="_blank">The Boston Consulting Group,Gurgoan,India</a>.
@@ -114,7 +114,7 @@
 
     <section id="skills">
         <div id="names">
-            <h3 class="bactive" id="hards"><span class="skill-name">Skills</span></h3>
+            <h3 id="hards"><span class="skill-name">Skills</span></h3>
             <h3 id="softs"></h3>
         </div></br>
         <div id="hbars" style="width: 80%;margin: auto;padding: 10px">
@@ -164,11 +164,31 @@
                     </div>
                 </div>
             </div>
+            <div class="row col-sm-12">
+                <div class="col-sm-6">
+                    <div class="bar hbar" data-percent="60">
+                        <h3>Django</h3>
+                        <canvas class="bar-circle" width="70" height="70"></canvas>
+                    </div>
+                    <div class="bar hbar" data-percent="80">
+                        <h3>Fast-API</h3>
+                        <canvas class="bar-circle" width="70" height="70"></canvas>
+                    </div>
+                    <div class="bar hbar" data-percent="70">
+                        <h3>React</h3>
+                        <canvas class="bar-circle" width="70" height="70"></canvas>
+                    </div>
+                    <div class="bar hbar" data-percent="50">
+                        <h3>Docker</h3>
+                        <canvas class="bar-circle" width="70" height="70"></canvas>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <hr class="num">
-    <section id="contact">
+    <!-- <hr class="num"> -->
+    <!-- <section id="contact">
         <form>      
             <h1 class="contact-me">Contact me.</h1>
             <input name="name" type="text" class="feedback-input" placeholder="Name" />   
@@ -176,7 +196,7 @@
             <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
             <input type="submit" value="Submit"/>
           </form>
-    </section>
+    </section> -->
 
 
     <hr class="num">
@@ -520,9 +540,5 @@
             var circularBars = new CircularSkillBar("#hbars .hbar");
         });
     })();
-
-
-
 </script>
-
 </html>
